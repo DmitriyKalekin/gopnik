@@ -1,5 +1,8 @@
 from Command import Command
+from PlayerModel import PlayerModel
 class AttackCommand(Command) : 
+    def __init__(self, player : PlayerModel) :
+        self.player = PlayerModel
     def execute(self) :
-        #TODO implement method to attack connected with PlayerConsoleController
+        self.player.Attack()
         pass
