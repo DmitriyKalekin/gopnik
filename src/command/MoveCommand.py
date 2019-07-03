@@ -1,7 +1,7 @@
-from Command import Command
-from PlayerModel import PlayerModel
+from command.Command import Command
+from models.PlayerModel import PlayerModel
 class MoveCommand(Command) :
     def __init__(self, player) :
-        self.player = PlayerModel
+        self.player = PlayerModel()
     def execute(self) :
-        self.player.move()
+        self.player.Move()
